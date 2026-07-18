@@ -1,0 +1,10 @@
+# Tooling internal (bukan bagian situs)
+.claude/
+.impeccable/
+.agents/
+PRODUCT.md
+skills-lock.json
+
+# Master art asli (versi situs memakai .webp; master ada di folder handoff)
+images/bags/*.png
+images/bags/*.jpeg
