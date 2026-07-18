@@ -312,6 +312,7 @@ function positionSegIndicator(seg, animate) {
   const ind = seg.querySelector(".seg-ind");
   const active = seg.querySelector("button.on");
   if (!ind || !active) return;
+  if (ind.getAnimations) ind.getAnimations().forEach((a) => a.cancel());
   const first = ind.getBoundingClientRect();
   ind.style.left = active.offsetLeft + "px";
   ind.style.width = active.offsetWidth + "px";
